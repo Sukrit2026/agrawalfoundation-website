@@ -1,5 +1,5 @@
 /* ============================================================
-   AGRAWAL FOUNDATION — Main JS
+   AGRAWAL FAMILY FOUNDATION — Main JS
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

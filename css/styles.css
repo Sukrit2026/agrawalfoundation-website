@@ -1,5 +1,5 @@
 /* ============================================================
-   AGRAWAL FOUNDATION — CSS
+   AGRAWAL FAMILY FOUNDATION — CSS
    Branding inherited from Litera Capital
    ============================================================ */
 
@@ -65,11 +65,12 @@ p+p{margin-top:14px}
 .btn-sm{padding:10px 24px;font-size:13px}
 
 /* ---------- Header ---------- */
-header{position:sticky;top:0;z-index:1000;background:var(--white);box-shadow:0 1px 4px rgba(0,0,0,.08);height:var(--header-h)}
+header{position:sticky;top:0;z-index:1000;background:var(--white);box-shadow:0 1px 4px rgba(0,0,0,.08);height:var(--header-h);padding:4px 0}
 header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
-.logo{display:flex;align-items:center;gap:12px;font-family:"Roboto",sans-serif;font-weight:600;font-size:20px;color:var(--primary)}
-.logo img{height:44px;width:auto}
-.logo span{font-size:13px;font-weight:400;color:var(--text-light);display:block;line-height:1.2}
+.logo{display:flex;align-items:center;gap:14px;font-family:"Roboto",sans-serif;font-weight:600;font-size:20px;color:var(--primary);text-decoration:none}
+.logo img{height:52px;width:auto;border-radius:4px}
+.logo .logo-text{display:flex;flex-direction:column;line-height:1.2}
+.logo .logo-text span{font-size:12px;font-weight:400;color:var(--text-light);letter-spacing:0.5px}
 
 nav ul{display:flex;gap:32px}
 nav a{font-family:"Roboto",sans-serif;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text);position:relative;padding:4px 0;transition:color .3s}
