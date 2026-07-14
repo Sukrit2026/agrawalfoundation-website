@@ -1,0 +1,15 @@
+---
+# .cpanel.yml  —  deploy config for the Agrawal Family Foundation website
+# Mirrors the repo into public_html (rsync --delete); cleans dev files
+# (serve.js, .claude) off prod. .well-known/ (SSL) protected; excludes anchored.
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/agrawalfound/public_html/
+    - /bin/rsync -a --delete
+        --exclude='/.git/'
+        --exclude='/.gitignore'
+        --exclude='/.gitattributes'
+        --exclude='/.cpanel.yml'
+        --exclude='/.well-known/'
+        ./ "$DEPLOYPATH"
