@@ -44,39 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---- Counter Animation ---- */
-  const counters = document.querySelectorAll('.stat-number[data-count]');
-  const countObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.dataset.count, 10);
-        const prefix = el.dataset.prefix || '';
-        const suffix = el.dataset.suffix || '';
-        let current = 0;
-        const step = Math.ceil(target / 60);
-        const timer = setInterval(() => {
-          current += step;
-          if (current >= target) { current = target; clearInterval(timer); }
-          el.textContent = prefix + current.toLocaleString() + suffix;
-        }, 25);
-        countObserver.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-  counters.forEach(c => countObserver.observe(c));
-
-  /* ---- Contact form basic validation ---- */
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const btn = form.querySelector('.btn');
-      btn.textContent = 'Thank you!';
-      btn.style.background = '#27ae60';
-      setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 3000);
-    });
-  }
 });
 
 /* ---- Animate-in CSS ---- */

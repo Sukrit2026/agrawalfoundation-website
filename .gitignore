@@ -1,0 +1,12 @@
+# Local tooling / editor state — never committed
+.claude/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local-only dev preview server (never deployed)
+serve.js
+
+# Unused 2.5MB photo, not referenced by any page — kept local, out of deploy
+images/IMG_2740.jpg

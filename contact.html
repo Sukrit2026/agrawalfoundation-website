@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWTF7LBR7S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KWTF7LBR7S');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Agrawal Family Foundation</title>
   <meta name="description" content="Contact the Agrawal Family Foundation for grant inquiries, partnership opportunities, or general questions.">
@@ -10,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/Potential logo 7.jpg" type="image/jpeg">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -24,7 +33,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="mission.html">Mission</a></li>
@@ -36,6 +45,8 @@
     </div>
   </header>
 
+  <main id="main">
+
   <!-- Hero -->
   <section class="hero" style="padding:70px 0 60px;">
     <div class="container">
@@ -44,8 +55,6 @@
       <p>Whether you have a grant inquiry, a partnership proposal, or simply want to learn more about our work, we welcome your outreach.</p>
     </div>
   </section>
-
-  <main id="main">
 
   <!-- Contact Section -->
   <section class="section">
@@ -71,7 +80,7 @@
 
           <div style="margin-top:20px;padding:24px;background:var(--bg-light);border-radius:var(--radius);border-left:4px solid var(--primary);">
             <h4 style="margin-bottom:8px;">Public Filings</h4>
-            <p style="font-size:14px;color:var(--text-light);">As a 501(c)(3) private foundation, our tax filings are publicly available. You can find our Form 990-PF on <a href="https://projects.propublica.org/nonprofits/organizations/451657891" target="_blank" rel="noopener" style="color:var(--primary);text-decoration:underline;">ProPublica's Nonprofit Explorer</a>.</p>
+            <p style="font-size:14px;color:var(--text-light);">As a 501(c)(3) private foundation, our tax filings are publicly available. You can find our Form 990-PF on <a href="https://projects.propublica.org/nonprofits/organizations/451657891" target="_blank" rel="noopener noreferrer" style="color:var(--primary);text-decoration:underline;">ProPublica's Nonprofit Explorer</a>.</p>
           </div>
         </div>
 

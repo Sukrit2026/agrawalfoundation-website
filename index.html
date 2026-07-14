@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWTF7LBR7S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KWTF7LBR7S');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agrawal Family Foundation | Empowering Communities, Transforming Lives</title>
   <meta name="description" content="The Agrawal Family Foundation is a private family foundation dedicated to education, healthcare, and community empowerment. Based in South Florida.">
@@ -14,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/Potential logo 7.jpg" type="image/jpeg">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -28,7 +37,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="mission.html">Mission</a></li>
@@ -39,6 +48,8 @@
       </nav>
     </div>
   </header>
+
+  <main id="main">
 
   <!-- Hero -->
   <section class="hero">
@@ -77,9 +88,6 @@
     </div>
   </section>
 
-  <!-- Main Content -->
-  <main id="main">
-
   <!-- Mission Preview -->
   <section class="section">
     <div class="container">
@@ -112,7 +120,7 @@
         <h2>Our Focus Areas</h2>
         <p>We direct our philanthropic efforts toward four interconnected pillars that together build stronger, more resilient communities.</p>
       </div>
-      <div class="card-grid" style="grid-template-columns:repeat(4,1fr)">
+      <div class="card-grid card-grid-4">
         <div class="card animate">
           <div class="card-icon">📚</div>
           <h3>Education</h3>
